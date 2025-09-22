@@ -1,1 +1,2 @@
-# mini-project-kaggle-titanic
+# Mini Project: Kaggle Titanic
+
