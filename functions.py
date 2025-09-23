@@ -26,3 +26,13 @@ def generate_results(model, test_df, output_csv_name):
     })
     results.set_index('PassengerId', inplace=True)
     results.to_csv(f'results/{output_csv_name}')
+
+def generate_scaled_results(model, scaler, test_df, output_csv_name):
+    test_scaled = scaler.transform(test_df.drop(columns=['PassengerId']))
+    y_pred = model.predict(test_scaled)
+    results = pd.DataFrame({
+    "PassengerId":test_df['PassengerId'],
+    "Survived":y_pred
+    })
+    results.set_index('PassengerId', inplace=True)
+    results.to_csv(f'results/{output_csv_name}')
