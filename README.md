@@ -12,3 +12,4 @@ Participating in [Kaggle Titanic Competition](https://www.kaggle.com/competition
 - `logistic_regression_better.csv` --> 0.76076
 - `knn_better_result_withcabins.csv` --> 0.76076
 - `decision_tree_better_result_withcabins.csv` --> 0.76315
+- `logistic_regression_better_result_withcabins.csv` --> 0.77033
